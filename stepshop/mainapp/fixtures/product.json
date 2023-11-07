@@ -1,0 +1,122 @@
+[
+  {
+    "model": "mainapp.product",
+    "pk": 1,
+    "fields": {
+      "category": 2,
+      "name": "Кеды",
+      "image": "product_images/i_1_H9WHohE.webp",
+      "short_desc": "Красные кеды",
+      "description": "",
+      "price": "500.00",
+      "quantity": 5,
+      "created_at": "2023-10-31T09:38:13.642Z",
+      "updated_at": "2023-10-31T10:55:08.488Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "name": "Кеды",
+      "image": "product_images/i_skVhqdb.webp",
+      "short_desc": "Желтые кеды",
+      "description": "",
+      "price": "600.00",
+      "quantity": 6,
+      "created_at": "2023-10-31T10:25:55.150Z",
+      "updated_at": "2023-10-31T10:55:20.624Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 10,
+    "fields": {
+      "category": 4,
+      "name": "Куртка осенняя",
+      "image": "product_images/i_3_UTFIjDe.webp",
+      "short_desc": "",
+      "description": "",
+      "price": "600.00",
+      "quantity": 2,
+      "created_at": "2023-10-31T10:45:00.562Z",
+      "updated_at": "2023-10-31T10:52:47.613Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 11,
+    "fields": {
+      "category": 5,
+      "name": "Джинсы синие",
+      "image": "product_images/item-02.jpg",
+      "short_desc": "Джинсы синие",
+      "description": "",
+      "price": "50.00",
+      "quantity": 2,
+      "created_at": "2023-10-31T10:50:35.483Z",
+      "updated_at": "2023-10-31T10:51:29.948Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 12,
+    "fields": {
+      "category": 5,
+      "name": "Джинсы голубые",
+      "image": "product_images/item-01.jpg",
+      "short_desc": "Джинсы голубые",
+      "description": "",
+      "price": "70.00",
+      "quantity": 3,
+      "created_at": "2023-10-31T10:52:15.112Z",
+      "updated_at": "2023-10-31T10:52:15.112Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 13,
+    "fields": {
+      "category": 6,
+      "name": "Сумка женская",
+      "image": "product_images/item-04.jpg",
+      "short_desc": "Сумка женская",
+      "description": "",
+      "price": "50.00",
+      "quantity": 2,
+      "created_at": "2023-10-31T10:53:54.310Z",
+      "updated_at": "2023-10-31T10:53:54.310Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 14,
+    "fields": {
+      "category": 6,
+      "name": "Сумка женская",
+      "image": "product_images/item-05.jpg",
+      "short_desc": "Сумка женская",
+      "description": "",
+      "price": "40.00",
+      "quantity": 2,
+      "created_at": "2023-10-31T10:54:16.653Z",
+      "updated_at": "2023-10-31T10:54:16.653Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 15,
+    "fields": {
+      "category": 5,
+      "name": "Джинсы синие",
+      "image": "",
+      "short_desc": "Джинсы синие",
+      "description": "",
+      "price": "500.00",
+      "quantity": 1,
+      "created_at": "2023-10-31T11:03:38.080Z",
+      "updated_at": "2023-10-31T11:03:38.080Z"
+    }
+  }
+]
