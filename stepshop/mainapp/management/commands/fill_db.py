@@ -38,5 +38,6 @@ class Command(BaseCommand):
             new_product = Product(**_product)
             new_product.save()
 
-        ShopUser.objects.create_superuser('admin', 'admin@beaver.local', age=23)
+        ShopUser.objects.all().delete()
+        ShopUser.objects.create_superuser('admin', 'admin@beaver.local', '123', age=23)
 
