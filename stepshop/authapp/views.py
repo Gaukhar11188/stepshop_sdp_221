@@ -47,3 +47,21 @@ def register(request):
 
     return render(request, 'register.html', context)
 
+
+def edit(request):
+    title = 'Редактирование'
+
+    if request.method == "POST":
+        edit_form = ShopUserEditForm(request.POST, request.FILES, instance=request.user)
+
+        if edit_form.is_valid():
+            edit_form.save()
+            return HttpResponseRedirect(reverse('auth:edit'))
+
+    else:
+        edit_form = ShopUserEditForm(instance=request.user)
+
+    context = get_data(title=title, edit_form=edit_form)
+
+    return render(request, 'edit.html', context)
+
