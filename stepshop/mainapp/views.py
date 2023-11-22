@@ -19,7 +19,7 @@ def get_data(**kawargs):
 
 
 def index(request):
-    title = "главное"
+    title = "Главная"
     prods = Product.objects.all()
     context = get_data(title=title, prods=prods)
     return render(request, 'index.html', context)
@@ -45,7 +45,7 @@ def product(request, pk):
 
 
 def products(request, pk=None):
-    title = "Котолог продуктов"
+    title = "Каталог продуктов"
 
     #_products = Product.objects.all()
     _products = Product.objects.order_by('price')
