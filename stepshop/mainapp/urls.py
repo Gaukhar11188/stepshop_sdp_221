@@ -14,7 +14,6 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
 
 from mainapp.views import product, products
@@ -22,6 +21,8 @@ from mainapp.views import product, products
 app_name = 'products'
 
 urlpatterns = [
-    path('', product, name='index'),
-    path('product/<int:pk>/', products, name='product'),
+    path('', products, name='index'),
+    path('<int:pk>/', products, name='category'),
+    path('product/<int:pk>/', product, name='product'),
 ]
+
