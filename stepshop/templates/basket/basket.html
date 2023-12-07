@@ -1,8 +1,14 @@
 {% extends 'layout/base.html' %}
+
 {% load static %}
 
+{% block title %}&mdash;Корзина{{title|capfirst}}{% endblock %}
+
 {% block content %}
+
 {% if user.is_authenticated %}
+<br>
+<br>
 <div class="container">
     <div class="row">
         <table class="table">

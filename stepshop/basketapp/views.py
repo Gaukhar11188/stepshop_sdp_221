@@ -3,12 +3,13 @@ from django.http import HttpResponseRedirect
 
 from .models import Product
 from .models import Basket
+from mainapp.views import get_data
 
 
 def basket(request):
     if request.user.is_authenticated:
         user_basket = Basket.objects.filter(user=request.user)
-        context = {'basket': user_basket}
+        context = get_data(basket=user_basket)
         return render(request, 'basket/basket.html', context)
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 

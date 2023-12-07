@@ -6,7 +6,7 @@ from mainapp.models import Product, Category
 
 def get_data(**kawargs):
     links_menu = [
-        {'link': 'index', 'name': 'Главное'},
+        {'link': 'index', 'name': 'Главная'},
         {'link': 'products:index', 'name': 'Продукты'},
         {'link': 'about', 'name': 'О нас'},
         {'link': 'contacts', 'name': 'Контакты'}
@@ -17,6 +17,7 @@ def get_data(**kawargs):
     context = {'links_menu': links_menu, "categories": categories}
     context.update(**kawargs)
     return context
+
 
 def get_basket(user):
     if user.is_authenticated:
