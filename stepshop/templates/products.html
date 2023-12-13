@@ -12,9 +12,9 @@
             <div class="section-heading">
               <div class="line-dec"></div>
                 {% if category %}
-                <h1>Продукты: {{ category }}</h1>
+                <h1>Меню: {{ category }}</h1>
                 {% else %}
-                <h1>Продукты</h1>
+                <h1>Меню</h1>
                 {% endif %}
             </div>
           </div>
@@ -32,7 +32,7 @@
 
             <div id="{{ prod.pk }}" class="item new col-md-4">
               <a href="{% url 'products:product' prod.pk %}">
-                <div class="featured-item">
+                <div class="featured-item text-center">
                     {% if prod.image %}
                   <img src="/media/{{ prod.image }}"
                        alt="{{ prod.name }}">
@@ -40,7 +40,7 @@
                     <img src="{% static 'assets/images/default.png' %}" alt ="Нет картинки">
                     {% endif %}
                   <h4>{{ prod.name }}</h4>
-                  <h6>{{ prod.price }}</h6>
+                  <h6>{{ prod.price }} тг</h6>
                 </div>
               </a>
             </div>
@@ -49,20 +49,7 @@
         </div>
     </div>
 
-    <div class="page-navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul>
-              <li class="current-page"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- Featred Page Ends Here -->
 {% endblock %}
 

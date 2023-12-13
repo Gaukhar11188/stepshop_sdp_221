@@ -7,7 +7,7 @@ from mainapp.models import Product, Category
 def get_data(**kawargs):
     links_menu = [
         {'link': 'index', 'name': 'Главная'},
-        {'link': 'products:index', 'name': 'Продукты'},
+        {'link': 'products:index', 'name': 'Меню'},
         {'link': 'about', 'name': 'О нас'},
         {'link': 'contacts', 'name': 'Контакты'}
     ]

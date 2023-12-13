@@ -12,12 +12,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="caption">
-              <h2>Ecommerce HTML Template</h2>
+              <h2>Добро пожаловать!</h2>
               <div class="line-dec"></div>
-              <p>Pixie HTML Template can be converted into your desired CMS theme. Total <strong>5 pages</strong> included. You can use this Bootstrap v4.1.3 layout for any CMS.
-              <br><br>Please tell your friends about <a rel="nofollow" href="https://www.facebook.com/tooplate/">Tooplate</a> free template site. Thank you. Photo credit goes to <a rel="nofollow" href="https://www.pexels.com">Pexels website</a>.</p>
+              <p>Откройте для себя великолепный мир вкуса в ресторане <strong>Chef Burger!</strong>.
+                </br>Наслаждайтесь неповторимыми бургерами, созданными с любовью к кулинарии и вниманием к каждой детали.
+             </p>
               <div class="main-button">
-                <a href="#">Order Now!</a>
+                <a href="{% url 'products:index' %}">Заказать!</a>
               </div>
             </div>
           </div>
@@ -33,7 +34,7 @@
           <div class="col-md-12">
             <div class="section-heading">
               <div class="line-dec"></div>
-              <h1>Featured Items</h1>
+              <h1>Обязательно попробуйте!</h1>
             </div>
           </div>
 
@@ -41,7 +42,7 @@
             <div class="owl-carousel owl-theme">
               {% for prod in prods %}
               <a href="{% url 'products:product' prod.pk %}">
-                <div class="featured-item">
+                <div class="featured-item text-center">
                   {% if prod.image %}
                     <img src ="{{ prod.image.url }}"
                          alt="{{ prod.name }}">
@@ -50,7 +51,7 @@
                          alt="нет картинки">
                   {% endif %}
                   <h4>{{ prod.name }}</h4>
-                  <h6>{{ prod.price }}</h6>
+                  <h6>{{ prod.price }} тг</h6>
                 </div>
               </a>
               {% endfor %}

@@ -17,7 +17,7 @@
           <div class="col-md-12">
             <div class="section-heading">
               <div class="line-dec"></div>
-              <h1>Product Page</h1>
+              <h1>Продукт</h1>
             </div>
           </div>
           <div class="col-md-6">
@@ -40,11 +40,11 @@
               <p>{{ prod.description }}</p>
               <span>{{ prod.quantity }} шт.</span><br>
 
-              <button class="btn btn-primary"><a href="{% url 'basket:add' prod.pk %}" class="text-light">Add To Cart</a></button>
+              <button class="btn btn-primary"><a href="{% url 'basket:add' prod.pk %}" class="text-light">Добавить в корзину</a></button>
 
               <div class="down-content">
                 <div class="categories">
-                    <h6>Category: <span><a href="{% url 'products:category' prod.pk %}">{{ prod.category }}</a></span></h6>
+                    <h6>Категория: <span><a href="{% url 'products:category' prod.pk %}">{{ prod.category }}</a></span></h6>
                 </div>
               </div>
             </div>

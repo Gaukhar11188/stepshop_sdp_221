@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-    <title>Бобер Inc. {% block title %}{% endblock %}</title>
+    <title>Chef Burger {% block title %}{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="{%  static 'assets/css/style.css' %}">
     {% block css %}
     {% endblock %}
-
+ <!-- Favicon -->
+  <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
 <!--
 Tooplate 2114 Pixie
 https://www.tooplate.com/view/2114-pixie
@@ -46,12 +47,13 @@ https://www.tooplate.com/view/2114-pixie
             <a href="{% url 'auth:edit' %}" class="text-light">
               {{  user.username }}</a>
 
+
             </span> |
             <span>
               <a href="{% url 'auth:logout' %}" class="text-light">Выйти</a></span>
             {% else %}
             <span> <a href="{% url 'auth:login' %}" class="text-light">Войти</a></span>
-            {% endif %} |
+            {% endif %}
 
 
             {% if user.is_authenticated and basket %}
@@ -83,9 +85,9 @@ https://www.tooplate.com/view/2114-pixie
         <div class="row">
           <div class="col-md-12">
             <div class="copyright-text">
-              <p>Copyright &copy; 2023&ndash;{% now "Y" %} Bober Inc.
+              <p>Copyright &copy; 2023&ndash;{% now "Y" %} Chef Burger.
 
-                - Design: <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                Design: <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
             </div>
           </div>
         </div>
