@@ -11,7 +11,8 @@ class Category(models.Model):
     description = models.TextField(
         verbose_name='Описание',
         blank=True,
-        )
+    )
+    is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
@@ -64,6 +65,8 @@ class Product(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
