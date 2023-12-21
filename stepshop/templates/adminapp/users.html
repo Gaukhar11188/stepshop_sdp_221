@@ -7,7 +7,7 @@
         <h1 class="mt-4">Пользователи</h1>
         <div class="card mb-4">
             <div class="card-header">
-                <i class="fas fa-table mr-1"></i>
+                <i class="fa fa-table mr-1"></i>
                 Пользователи
             </div>
             <div class="card-body">
@@ -25,18 +25,7 @@
                             <th>Удалить</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Имя пользователя</th>
-                            <th>Имя</th>
-                            <th>Фамилия</th>
-                            <th>Адрес эл. почты</th>
-                            <th>Персонал сайта</th>
-                            <th>Активный</th>
-                            <th>Вход</th>
-                            <th>Удалить</th>
-                        </tr>
-                        </tfoot>
+
                         <tbody>
                         {% for user in objects %}
                             <tr {% if user.is_delete %} style="opacity: 0.5;" {% endif %}>
